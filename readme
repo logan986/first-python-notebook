@@ -1,0 +1,77 @@
+TERMINALE PER ATTIVARE PYTHON IN AMBIENTE VIRTUALE
+cd Code (per entrare nella cartella)
+ls first-python-notebook
+cd first-pithon-notebook
+source bin/activate
+which python (per controllare)
+pip freeze (stampa tutte le 3rd party python libraries installate)
+installare Jupiter: pip install jupyter 
+
+per lanciarlo sul browser: jupyter notebook
+nel browser: NEW> NOTEBOOK: python 2
+
+Come fermare il server: CTRL + C
+per lanciarlo di nuovo sul browser: jupyter notebook
+
+GIT 
+Per avviare il repository nel folder corrente in cui siamo,
+
+git init .
+
+L’estensione del file è ipynb 
+
+git add Module_2_California_data.ipynb
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   Module_2_California_data.ipynb
+
+git commit -m “scrivi il tuo messaggio”
+(-m sta per messaggio)
+
+git add *.ipynb vuol dire che aggiungi tutti i file con quell’estensione una sola volta, altrimenti se cambi per esempio nome del file, devi aggiungere prima il file col nuovo nome, poi git add quello col nome vecchio
+
+MARKDOWN 
+Shortcut: m
+per annotare cosa succede bene nel tuo jupyter notebook 
+SINTASSI: https://daringfireball.net/projects/markdown/basics
+
+# TITOLO GROSSO
+## titolo medio
+### titolo più piccolo etc.
+
+GITHUB 
+crea nuovo repository
+con il comando REMOTE connetto un REMOTE al repository locale
+
+git remote add origin e poi LINK di GitHub 
+
+“Origin” è un termine per dire che è l’originale usato di solito dalle altre persone, così si lavora più facilmente nella comunità di sviluppatori
+
+ora prendiamo tutti i nostri cambiamenti e facciamo una PUSH verso internet
+
+git push origin
+
+e poi dobbiamo dirgli in quale BRANCH fare il push
+
+git push origin master
+
+poi devi mettere il tuo nome utente di GitHub e la password (sayonara86)
+
+
+Se faccio qualche modifica al file, prima la aggiungo a git, ovvero 
+
+git add *.ipynb
+
+poi controllo lo status
+
+git status
+
+poi faccio commit
+
+git commit -m “Messaggio” 
+
+e alla fine 
+
+git push origin master
